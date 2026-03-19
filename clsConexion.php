@@ -5,14 +5,13 @@ class Conexion{
 	private $usuario;
 	private $password;
 	private $basededatos;
-
 //constructor
 public function Conexion()
 {
 	$this->servidor = "localhost";
-	$this->usuario = "edwin";
-	$this->password = "12345678";
-	$this->basedatos = "ejemplo1";
+	$this->usuario = "root";
+	$this->password = "";
+	$this->basedatos = "bd_ventas";
 	
 }
 //metedos de acceso set y get
@@ -65,10 +64,9 @@ public function desconectar($cnx)
 
 public function ejecutar($sql)
 {
-   $bd=$this->conectar();	 
+	$bd=$this->conectar();	 
     $registros=mysqli_query($bd,$sql);
     $this->desconectar($bd);
-	
     return $registros;			
 }	
 

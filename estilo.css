@@ -1,0 +1,30 @@
+body {
+	background-color: #FFFFFF;
+}
+#form {
+    width:300px;
+    margin:auto;
+    background-color:#84AA00;
+    border:none;
+}
+#form legend{
+    font-weight:bold;
+    font-size:18px;
+    color:#FFFFFF;
+    background-color:#000000;
+    padding:3px 8px 3px 8px;
+}
+#form input.btn {
+width:inherit;
+    padding:2px;
+    color:#FFFFFF;
+    background-color:#576F00;
+    border:1px solid #000000;
+}
+A:link {color:#FFFF00;}
+A:visited {color:#FFFF00;}
+A:active {color:#FFFF00;}
+A:hover {color:#0000ff;}
+#form label{
+    color:#FFFFFF;
+}
